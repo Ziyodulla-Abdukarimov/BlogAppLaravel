@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}"
       x-data="{
-          darkMode: localStorage.darkMode || (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches),
+          darkMode: localStorage.darkMode === 'true' || (!('darkMode' in localStorage) && false),
           toggleTheme: function () {
-              this.darkMode ? localStorage.removeItem('darkMode') : localStorage.darkMode = true;
-              this.darkMode = !this.darkMode
+              this.darkMode = !this.darkMode;
+              localStorage.darkMode = this.darkMode;
           }
       }"
       x-bind:class="darkMode ? 'dark' : ''">
@@ -12,8 +12,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    @include('layout._seo')
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

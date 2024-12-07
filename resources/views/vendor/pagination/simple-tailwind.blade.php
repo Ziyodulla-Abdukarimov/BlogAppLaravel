@@ -3,22 +3,22 @@
         {{-- Previous Page Link --}}
         @if ($paginator->onFirstPage())
             <x-button class="opacity-50">
-                {!! __('pagination.previous') !!}
+                Orqaga
             </x-button>
         @else
             <x-button href="{{ $paginator->previousPageUrl() }}" rel="prev">
-                {!! __('pagination.previous') !!}
+                Orqaga
             </x-button>
         @endif
 
         {{-- Next Page Link --}}
         @if ($paginator->hasMorePages())
             <x-button href="{{ $paginator->nextPageUrl() }}" rel="next">
-                {!! __('pagination.next') !!}
+                Oldinga
             </x-button>
         @else
             <x-button class="opacity-50">
-                {!! __('pagination.next') !!}
+                Oldinga
             </x-button>
         @endif
     </nav>

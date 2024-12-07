@@ -12,13 +12,13 @@
             action="/"
             x-show="showSearch"
             style="display: none;">
-        <label for="search" class="sr-only">{{ __('Search posts') }}</label>
+        <label for="search" class="sr-only">'Izlash'</label>
         <input
                 type="text"
                 name="search"
                 id="search"
                 value="{{ request()->get('search', '') }}"
-                placeholder="{{ __('Search...') }}"
+                placeholder="Izlash..."
                 class="bg-gray-100 border-gray-200 text-sm rounded-lg">
     </form>
 </div>

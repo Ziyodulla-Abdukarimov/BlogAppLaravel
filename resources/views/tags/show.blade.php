@@ -1,6 +1,6 @@
 <x-app-layout :title="__('Latest posts of :tag', ['tag' => $tag->name])">
     <x-header-frame>
-        {{ __('Latest posts of tag ') }}
+        Eng oxirgi teg postlari
         <span class="text-indigo-600 dark:text-indigo-300">{{ $tag->name }}</span>
     </x-header-frame>
 

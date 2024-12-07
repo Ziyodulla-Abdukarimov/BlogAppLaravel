@@ -16,23 +16,23 @@
             <div class="flex items-center justify-between mb-6">
                 <label for="remember" class="flex items-center cursor-pointer">
                     <input type="checkbox" name="remember" id="remember">
-                    <span class="ml-2 text-sm text-gray-500">{{ __('Remember me') }}</span>
+                    <span class="ml-2 text-sm text-gray-500">Remember me</span>
                 </label>
 
                 <x-link href="{{ route('password.request') }}">
-                    {{ __('Forgot password?') }}
+                    Forgot password?
                 </x-link>
             </div>
 
-            <x-form.button>{{ __('Log in') }}</x-form.button>
+            <x-form.button>Log in</x-form.button>
         </x-form>
     </x-auth.card>
 
     <div class="mt-4 text-center">
-        <p class="text-sm text-gray-700 dark:text-neutral-200">{{ __("Don't have an account?") }}</p>
+        <p class="text-sm text-gray-700 dark:text-neutral-200">Don't have an account?</p>
 
         <x-link href="{{ route('register') }}">
-            {{ __('Sign up') }}
+            Sign up
         </x-link>
     </div>
 </x-app-layout>

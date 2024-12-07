@@ -8,7 +8,7 @@
             </div>
         </div>
         <div>
-            <h3 class="text-gray-600">{{ __($title) }}</h3>
+            <h3 class="text-gray-600">{{ $title }}</h3>
             <h2 class="text-black text-3xl font-bold">{{ $count }}</h2>
         </div>
     </div>
@@ -16,6 +16,6 @@
         {{ $slot }}
     </div>
     <div class="mt-auto rounded-b-lg bg-gray-100 px-6 py-4">
-        <a href="{{ $link }}" class="text-indigo-600 font-medium">{{ __('View all') }}</a>
+        <a href="{{ $link }}" class="text-indigo-600 font-medium">Hammasini ko‘rish</a>
     </div>
 </div>

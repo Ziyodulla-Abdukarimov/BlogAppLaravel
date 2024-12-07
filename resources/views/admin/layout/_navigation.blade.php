@@ -13,8 +13,7 @@
 
             <!-- Desktop right menu -->
             <div class="hidden md:flex items-center space-x-4">
-                <!-- Language Switcher -->
-                <x-lang-switcher class="text-white" />
+
 
                 <!-- Back to site link -->
                 <x-admin.back-to-site />
@@ -25,9 +24,6 @@
 
             <!-- Mobile right menu -->
             <div class="-mr-2 flex items-center space-x-2 md:hidden">
-                <!-- Language Switcher -->
-                <x-lang-switcher class="text-white" />
-
                 <!-- Back to site link -->
                 <x-admin.back-to-site />
 
