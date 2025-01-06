@@ -16,7 +16,8 @@ php artisan key:generate
 ```
 5. Install node dependencies and generate front-end assets
 ```bash
-npm install && npm run dev
+npm install
+npm run dev
 ```
 6. Start the local development server
 ```bash
