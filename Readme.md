@@ -1,6 +1,6 @@
 1. Clone the repository and cd into
 ```bash
-git clone https://github.com/Ziyodulla-Abdukarimov/BlogAppLaravel.git && cd laravel-blog-app
+git clone https://github.com/Ziyodulla-Abdukarimov/BlogAppLaravel.git && cd BlogAppLaravel
 ```
 2. Install dependencies using composer
 ```bash
